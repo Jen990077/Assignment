@@ -38,7 +38,7 @@ Cavs.Person.prototype.SetNumber = function(number){
 	this.Number = number; 
 }
 
-Main.Person.prototype.GetPlayer = function()
+Cavs.Person.prototype.GetPlayer = function()
 {
 	return this.Player + " " + this.Number;
 }
