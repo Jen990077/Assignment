@@ -24,9 +24,9 @@ Cavs.Tristan = new Cavs.Person("Tristan Thompson", 13, 6'9, 238, 03/13/1991);
 Cavs.Anderson = new Cavs.Person("Anderson Varejao", 17, 6'11, 267, 09/28/1982);
 Cavs.Mo = new Cavs.Person("Mo Williams", 35, 6'1, 198, 12/19/1982); 
 
-Cavs.BestPlayer = Main.LeBron;
-Cavs.SecondBestPlayer = Main.Kyrie;
-Cavs.ThirdBestPlayer = Main.Kevin; 
+Cavs.BestPlayer = Cavs.LeBron;
+Cavs.SecondBestPlayer = Cavs.Kyrie;
+Cavs.ThirdBestPlayer = Cavs.Kevin; 
 
 
 Cavs.Person.prototype.SetPlayer = function(name)
