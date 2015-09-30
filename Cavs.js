@@ -8,6 +8,7 @@ Cavs.Person = function(player,number, height, weight, dob)
 	this.DOB = dob;
 
 }
+delete Cavs.dob; 
 
 Cavs.Matthew = new Cavs.Person("Matthew Dellavedova", 8, "6'4", 200, 09/08/1990);
 Cavs.Joe = new Cavs.Person("Joe Harris", 12, "6'6", 225, 9/7/1991);
@@ -50,4 +51,5 @@ Cavs.Anderson.SetNumber("17");
 
 document.body.innerHTML = Cavs.JR.GetPlayer();
 document.body.innerHTML = Cavs.Tristan.GetPlayer();
+
 
