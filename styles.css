@@ -1,0 +1,48 @@
+.button1 
+{ 
+ 	width : 100px; 
+ 	height : 20px; 
+ 	padding : 20px; 
+ 	margin : 20px; 
+	font-size : 20px; 
+ 	font-family : "Times New Roman"; 
+ 	text-align : center; 
+ 	border : 6px solid Green;
+ 	display : inline-block; 
+ } 
+ 
+ .button2
+{ 
+ 	width : 100px; 
+ 	height : 20px; 
+ 	padding : 20px; 
+ 	margin : 20px; 
+	font-size : 20px; 
+ 	font-family : "Times New Roman"; 
+ 	text-align : center; 
+ 	border : 6px solid Red;
+ 	display : inline-block; 
+ } 
+ .button3 
+{ 
+ 	width : 100px; 
+ 	height : 20px; 
+ 	padding : 20px; 
+ 	margin : 20px; 
+	font-size : 20px; 
+ 	font-family : "Times New Roman"; 
+ 	text-align : center; 
+ 	border : 6px solid Green;
+ 	display : inline-block; 
+ } 
+ .button4 
+{ 
+ 	width : 100px; 
+ 	height : 20px; 
+ 	padding : 20px; 
+ 	margin : 20px; 
+	font-size : 20px; 
+ 	font-family : "Times New Roman"; 
+ 	text-align : center; 
+ 	border : 6px solid Red; 
+ 	display : inline-block; 
