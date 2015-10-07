@@ -1,55 +1,238 @@
-var Cavs = {};
-Cavs.Person = function(player,number, height, weight, dob)
-{
-	this.Player = player;
-	this.Number = number;
-	this.Height = height;
-	this.Weight = weight;
-	this.DOB = dob;
+ 
+ 	function displayRestaurant(restaurant) 
+ { 
+ 	alert(restaurant.fastFood); 
+	alert(restaurant.DairyQueen);
+ 	alert(restaurant.city); 
+ 	alert(restaurant.employee1[0].firstName); 
+ 	alert(restaurant.employee1[0].lastName); 
+ 	alert(restaurant.employee1[0].age);
+ 	alert(restaurant.employee1[0].shirtWork);
+ 
+ 
+ 	for (var i=0; i<restaurant.employee1.length; i++) 
+ 	{ 
+ 		var member = restaurant.employee1[i];  
+		alert( member.shiftWork + " " + member.firstName + " " + member.lastName + "" + member.age); 
+ 	} 
+ } 
+ 
+ 
+	function displayRestaurant2(restaurant2) 
+ { 
+ 	alert(restaurant.fastFood); 
+ 	alert(restaurant.city); 
+	alert(restaurant.DairyQueen);
+ 	alert(restaurant.employee2[0].firstName); 
+ 	alert(restaurant.employee2[0].lastName); 
+ 	alert(restaurant.employee2[0].age);
+ 	alert(restaurant.employee2[0].shirtWork);
+ 
+ 
+ 	for (var i=0; i<restaurant2.employee2.length; i++) 
+ 	{ 
+ 		var member2 = restaurant2.employee2[i];  
+		alert( member2.shiftWork + " " + member2.firstName + " " + member2.lastName + "" + member2.age); 
+ 	} 
+ } 
 
-}
-delete Cavs.dob; 
+	function displayRestaurant3(restaurant3) 
+ { 
+ 	alert(restaurant.fastFood); 
+ 	alert(restaurant.city); 
+	alert(restaurant.DairyQueen);
+ 	alert(restaurant.employee3[0].firstName); 
+ 	alert(restaurant.employee3[0].lastName); 
+ 	alert(restaurant.employee3[0].age);
+ 	alert(restaurant.employee3[0].shirtWork);
+ 
+ 
+ 	for (var i=0; i<restaurant3.employee3.length; i++) 
+ 	{ 
+ 		var member3 = restaurant3.employee3[i];  
+		alert( member3.shiftWork + " " + member3.firstName + " " + membe3r.lastName + "" + member3.age); 
+ 	} 
+ } 
 
-Cavs.Matthew = new Cavs.Person("Matthew Dellavedova", 8, "6'4", 200, 09/08/1990);
-Cavs.Joe = new Cavs.Person("Joe Harris", 12, "6'6", 225, 9/7/1991);
-Cavs.Kyrie = new Cavs.Person("Kyrie Irving", 2, "6'3", 193, 3/23/1992);
-Cavs.LeBron = new Cavs.Person("LeBron James", 23, "6'8", 250, 12/20/1984);
-Cavs.Richard = new Cavs.Person("Richard Jefferson", 34,"6'7", 234, 6/21/1980);
-Cavs.James = new Cavs.Person("James Jones", 1, "6'8", 215, 10/4/1980); 
-Cavs.Kevin = new Cavs.Person("Kevin Love", 0, "6'10", 243, 09/7/1988);
-Cavs.Timofey = new Cavs.Person("Timofey Mozgov", 20, "7'1", 250, 7/16/1986);
-Cavs.SirDominic = new Cavs.Person("Sir'Dominic Pointer", 33, "6'5", 198, 5/6/1992);
-Cavs.Iman = new Cavs.Person("Iman Shumpert", 4, "6'5", 220, 6/26/1990);
-Cavs.JR = new Cavs.Person("JR Smith", 5, "6'6", 225, 9/9/1985);
-Cavs.Tristan = new Cavs.Person("Tristan Thompson", 13, "6'9", 238, 3/13/1991);
-Cavs.Anderson = new Cavs.Person("Anderson Varejao", 17, "6'11", 267, 9/28/1982);
-Cavs.Mo = new Cavs.Person("Mo Williams", 35, "6'1", 198, 12/19/1982); 
-
-Cavs.BestPlayer = Cavs.LeBron;
-Cavs.SecondBestPlayer = Cavs.Kyrie;
-Cavs.ThirdBestPlayer = Cavs.Kevin; 
-
-
-Cavs.Person.prototype.SetPlayer = function(name)
-	{
-		this.Player = name;
-	}
-Cavs.Person.prototype.SetNumber = function(number){
-
-	this.Number = number; 
-}
-
-Cavs.Person.prototype.GetPlayer = function()
-{
-	return this.Player + " " + this.Number;
-}
-
-
-Cavs.LeBron.SetPlayer("Famous"); 
-Cavs.Anderson.SetNumber("17"); 
+	function displayRestaurant4(restaurant4) 
+ { 
+ 	alert(restaurant.fastFood); 
+ 	alert(restaurant.city); 
+	alert(restaurant.DairyQueen);
+ 	alert(restaurant.employee4[0].firstName); 
+ 	alert(restaurant.employee4[0].lastName); 
+ 	alert(restaurant.employee4[0].age);
+ 	alert(restaurant.employee4[0].shirtWork);
+ 
+ 
+ 	for (var i=0; i<restaurant4.employee4.length; i++) 
+ 	{ 
+ 		var member4 = restaurant4.employee4[i];  
+		alert( member4.shiftWork + " " + member4.firstName + " " + member4.lastName + "" + member4.age); 
+ 	} 
+ } 
 
 
-document.body.innerHTML = Cavs.JR.GetPlayer();
-document.body.innerHTML = Cavs.Tristan.GetPlayer();
 
 
+
+
+
+function createRestaurantAsJSON() 
+ { 
+ 	return { 
+
+   		"fastFood" : "DairyQueen",
+ 		"city"     : "Streetsboro", 
+ 		 
+ 		"employee1" : [ 
+
+ 
+ 			{ 
+ 				"firstName" : "Jennifer", 
+				"lastName" : "Leverenz", 
+ 				"age" 	   : 21,
+				"shiftWork" : "Day" 
+ } ]};
+ 
+ 
+ }
+	
+	function createRestaurant2AsJSON()  
+ { 
+ 	return { 
+			
+	"employee2" : [
+
+ 
+ 			{ 
+ 				"firstName" : "Kenzie", 
+ 				"lastName" : "Gregoire", 
+ 				"age" : 20,
+				"shiftWork" : "Day"
+ 
+			}
+	]};
+ }
+	function createRestaurant3AsJSON()
+ { 
+ 	return { 
+	"employee3" : [
+ 
+ 			{ 
+ 				"firstName" : "Kayla", 
+ 				"lastName" : "Kulla", 
+ 				"age" : 20,  
+				"shiftWork" : "night"
+ 			}
+			
+	]};
+ }
+	function createRestaurant4AsJSON() 
+ { 
+ 	return { 
+                         
+ 	"employee4": [		
+			{ 
+ 				"firstName" : "Mary", 
+ 				"lastName" : "Richards", 
+ 				"age" : 20,  
+				"ShiftWork" : "night"
+ 			}  
+			]
+ 
+ 
+ 		
+ 
+ 	}; 
+ } 
+
+
+
+
+
+
+
+$(document).ready(function () {
+ 
+ $(".button0").mouseover(function() 
+ 	{ 
+ 		$(this).css("border", "10px solid blue"); 
+ 	}); 
+ 
+ 
+ 	$(".button0").mouseout(function() 
+ 	{ 
+ 		$(this).css("border", "10px solid red"); 
+ 	}); 
+
+$(".button1").click(function() 
+ 	{ 
+ 		var member = createRestaurantAsJSON(); 
+ 		displayRestaurant(restaurant); 
+ 	}); 
+
+
+
+ $(".button2").click(function() 
+ 	{ 
+ 		var member2 = createRestaurant2AsJSON(); 
+ 		displayRestaurant2(restaurant2); 
+ 	}); 
+
+
+$(".button6").mouseover(function() 
+ 	{ 
+ 		$(this).css("border", "10px solid purple"); 
+ 	}); 
+ 
+ 
+ 	$(".button6").mouseout(function() 
+ 	{ 
+ 		$(this).css("border", "10px solid pink"); 
+ 	}); 
+
+
+$(".button3").click(function() 
+ 	{ 
+ 		var member3 = createRestaurant3AsJSON(); 
+ 		displayRestaurant3(restaurant3); 
+ 	}); 
+
+$(".button7").mouseover(function() 
+ 	{ 
+ 		$(this).css("border", "10px solid red"); 
+ 	}); 
+ 
+ 
+ 	$(".button7").mouseout(function() 
+ 	{ 
+ 		$(this).css("border", "10px solid black"); 
+
+ 	}); 
+
+
+
+
+$(".button4").click(function() 
+ 	{ 
+ 		var member4= createRestaurant4AsJSON(); 
+ 		displayRestaurant4(restaurant4); 
+ 	}); 
+
+
+
+$(".button8").mouseover(function() 
+ 	{ 
+ 		$(this).css("border", "10px solid lime"); 
+ 	}); 
+ 
+ 
+ 	$(".button8").mouseout(function() 
+ 	{ 
+ 		$(this).css("border", "10px solid red"); 
+ 	}); 
+
+  
+  
+	
